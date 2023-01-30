@@ -12,29 +12,30 @@ function App() {
 
   return (
     <>
-        <section className="showcase">
-          <header>
-            <h2 className="logo">Marathon</h2>
-            <div className={`toggle ${active}`} onClick={toggle}></div>
-          </header>
-          <video src={video} muted loop autoPlay></video>
-          <div className="overlay"></div>
-          <div className="text">
-            <h2>Are u ready </h2>
-            <h3>To run your lungs out</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.</p>
-            <a href="#">Donate</a>
-          </div>
-          <ul className="social">
-            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt='twitter' /></a></li>
-            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt='instagram' /></a></li>
-          </ul>
+      <section className="showcase">
+        <header>
+          <h2 className="logo">Marathon</h2>
+          <div className="toggle" onClick={toggle}></div>
+        </header>
+        <video src={video} muted loop autoPlay></video>
+        <div className="overlay"></div>
+        <div className="text">
+          <h2>Are u ready </h2>
+          <h3>To run your lungs out</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+          <a href="#">Donate</a>
+        </div>
+        <ul className="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt='twitter' /></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt='instagram' /></a></li>
+        </ul>
 
-          <div className={`menu ${active}`}>
+        <div className={`menu ${active}`}>
+          <div className="toggle-active" onClick={toggle}></div>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -42,7 +43,7 @@ function App() {
             <li><a href="#">Live Tracker</a></li>
           </ul>
         </div>
-        </section>
+      </section>
 
     </>
   );

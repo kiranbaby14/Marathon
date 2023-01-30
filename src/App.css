@@ -37,8 +37,13 @@ header .logo {
     cursor: pointer;
 }
 
-.toggle.active {
+.toggle-active {
+    position: absolute;
+    width: 60px;
+    height: 60px;
     background: url(https://i.ibb.co/rt3HybH/close.png);
+    top: 40px;
+    left: 0;
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
@@ -165,7 +170,7 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 11;
+    z-index: 2000;
     background: transparent;
     border: 2px solid rgba(255,255,255, 0.5);
     backdrop-filter: blur(20px);

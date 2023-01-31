@@ -3,16 +3,19 @@ import { ThemeContext } from '../../App';
 import "./Header.css";
 
 const Header = () => {
+    const {active, toggle} = useContext(ThemeContext);
 
     window.addEventListener("scroll", () => {
         var header = document.querySelector("header");
-        var toggle = document.querySelector(".toggle-active"); // (../Navbar/Navbar)
+        var toggleClose = document.querySelector(".toggle-close"); // (../Navbar/Navbar)
 
         header.classList.toggle("sticky", window.scrollY > 0)
-        toggle.classList.toggle("sticky", window.scrollY > 0);
-    })
+        toggleClose.classList.toggle("sticky", window.scrollY > 0);
 
-    const {toggle} = useContext(ThemeContext);
+        // if( window.scrollY && active=="active") {
+        //     toggle();
+        // }
+    })
     
     return (
         <header>

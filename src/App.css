@@ -22,3 +22,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: wheat;
 }
+
+html {
+    scroll-behavior: smooth;
+}

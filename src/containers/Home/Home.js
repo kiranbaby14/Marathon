@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <>
-            <section className="showcase">
+            <section className="showcase" id="home">
                 <Header />
                 <video src={video} muted loop autoPlay ></video>
                 <div className="overlay"></div>

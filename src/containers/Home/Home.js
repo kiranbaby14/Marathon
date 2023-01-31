@@ -10,7 +10,7 @@ const Home = () => {
         <>
             <section className="showcase">
                 <Header />
-                <video src={video} muted loop autoPlay></video>
+                <video src={video} muted loop autoPlay ></video>
                 <div className="overlay"></div>
                 <div className="text">
                     <h2>Are u ready </h2>

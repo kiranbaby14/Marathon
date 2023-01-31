@@ -3,6 +3,12 @@ import { ThemeContext } from '../../App';
 import "./Header.css";
 
 const Header = () => {
+
+    window.addEventListener("scroll", () => {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+
     const {toggle} = useContext(ThemeContext);
     
     return (

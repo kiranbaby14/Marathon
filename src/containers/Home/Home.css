@@ -107,9 +107,8 @@
 
 @media (max-width: 991px) {
 
-    .showcase,
-    .showcase header {
-        padding: 40px;
+    .showcase{
+        padding: 30px;
     }
 
     .text h2 {

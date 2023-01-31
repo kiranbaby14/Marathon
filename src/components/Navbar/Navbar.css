@@ -1,19 +1,5 @@
-
-.toggle-active {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/rt3HybH/close.png);
-    top: 40px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-}
-
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -300px;
     width: 300px;
@@ -49,4 +35,17 @@
 
 .nav ul li a:hover {
     color: #03a9f4;
+}
+
+.toggle-active {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    top: 40px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
 }

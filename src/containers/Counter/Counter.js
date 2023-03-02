@@ -50,10 +50,8 @@ const Counter = () => {
   }, [])
 
   return (
-    <div className='counter'>
-      <div className="text">
-        <h3 id='counter_heading'>Count Down</h3>
-      </div>
+    <div id='counter'>
+      <h3 id='counter_heading'>Count Down</h3>
 
       <div className='countdown'>
         <div className='box'>

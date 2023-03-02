@@ -19,7 +19,7 @@ const Header = () => {
     
     return (
         <header>
-            <h2 className="logo"><a href='#'>Marathon</a></h2>
+            {/* <h2 className="logo"><a href='#'>Marathon</a></h2> */}
             <div className="toggle" onClick={toggle}></div>
         </header>
     )

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../App';
 import "./Navbar.css";
 
@@ -6,7 +7,6 @@ const Navbar = () => {
     const { active, toggle } = useContext(ThemeContext);
     useEffect(() => {
         const nav = document.getElementsByClassName("nav")[0];
-        console.log(nav);
         nav.addEventListener("mousewheel", function (event) {
             event.preventDefault();
         });
@@ -22,10 +22,10 @@ const Navbar = () => {
         <div className={`nav ${active}`}>
             <div className="toggle-close" onClick={toggle}></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">Live Tracker</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/donate">Donate</Link></li>
+                <li><Link to="/tracker">Live Tracker</Link></li>
             </ul>
         </div>
     )

@@ -13,7 +13,6 @@ function App() {
   const [active, setActive] = useState("");
 
   const toggle = () => {
-    console.log("akdjb");
     setActive(active === "" ? "active" : "");
   }
 

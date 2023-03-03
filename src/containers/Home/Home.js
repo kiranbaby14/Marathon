@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import video from "../../assets/running.mp4";
 import Counter from '../Counter/Counter';
 import Footer from '../../components/Footer/Footer';

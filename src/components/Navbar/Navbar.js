@@ -7,7 +7,7 @@ const Navbar = () => {
     const { active, toggle } = useContext(ThemeContext);
     useEffect(() => {
         const nav = document.getElementsByClassName("nav")[0];
-        nav.addEventListener("mousewheel", function (event) {
+        nav.addEventListener("mousewheel",  (event) => {
             event.preventDefault();
         });
     }, [])

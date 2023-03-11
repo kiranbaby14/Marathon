@@ -18,13 +18,12 @@ const Home = () => {
                 </video>
                 <div className="overlay"></div>
                 <div className="text">
-                    <h2>Are u ready </h2>
-                    <h3>To run your lungs out</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                    <a href="#">Donate</a>
+                    <h2>University Ultra Run </h2>
+                    <h3>Oxford vs Cambridge vs St Andrews</h3>
+                    <p>A 1000 mile ultra marathon with sports oldest rivalry at its core
+                    University Ultra Run UK pits Oxford and Cambrdige against one another, with a new challenger joining the party…St Andrews!!
+                    </p>
+                    <a href="#">Become a Patron</a>
                 </div>
                 {/* <ul className="social">
                     <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>

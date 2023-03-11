@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer>
             <div className='footer-content'>
-                <h3>Marathon</h3>
-                <p>Lorem ipsum dolar sit, amet consecutor adipadn aend j jaebd hbbbj cdabd jabd</p>
+                <h3>University Ultra Run UK</h3>
+                <p>Be A Part Of History!!</p>
                 <ul className='footer-socials'>
                     <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>
                     <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt='twitter' /></a></li>

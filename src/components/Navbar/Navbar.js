@@ -4,28 +4,24 @@ import { ThemeContext } from '../../App';
 import "./Navbar.css";
 
 const Navbar = () => {
-    const { active, toggle } = useContext(ThemeContext);
+    const { active, toggle, closeNavBar } = useContext(ThemeContext);
     useEffect(() => {
         const nav = document.getElementsByClassName("nav")[0];
         nav.addEventListener("mousewheel",  (event) => {
             event.preventDefault();
         });
+
+        closeNavBar();
     }, [])
-
-
-    // window.addEventListener("scroll", () => {
-    //     var toggle = document.querySelector(".toggle-close");
-    //     toggle.classList.toggle("sticky", window.scrollY > 0);
-    // })
 
     return (
         <div className={`nav ${active}`}>
             <div className="toggle-close" onClick={toggle}></div>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/donate">Become A Patron</Link></li>
-                <li><Link to="/tracker">Live Tracker</Link></li>
+                <li><Link to="/" onClick={toggle}>Home</Link></li>
+                <li><Link to="/about" onClick={toggle}>About</Link></li>
+                <li><Link to="/donate" onClick={toggle}>Become A Patron</Link></li>
+                <li><Link to="/tracker" onClick={toggle}>Live Tracker</Link></li>
             </ul>
         </div>
     )

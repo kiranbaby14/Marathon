@@ -1,0 +1,35 @@
+.about_strategy {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+	padding: 45px;
+	transition: 0.5s;
+}
+
+.about_strategy_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_strategy_content{
+	position: absolute;
+	bottom: 0;
+}
+
+@media (max-width: 548px) {
+	.about_strategy {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about_strategy_content{
+		position: relative;
+	}
+
+}

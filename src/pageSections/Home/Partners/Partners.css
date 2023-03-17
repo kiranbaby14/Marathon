@@ -1,0 +1,44 @@
+.partners{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.partners_heading{
+   color: black !important;
+}
+
+.partners_slider{
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.partners_slider .partners_slide_track{
+    /* animation: partners_scroll_animation 40s linear infinite; */
+    display: flex;  
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* @keyframes partners_scroll_animation{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+} */
+
+.partners_img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    margin: 10px;
+}

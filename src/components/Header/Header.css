@@ -47,7 +47,7 @@ header .logo {
 }
 
 @media (max-width: 991px) {
-    .showcase header {
+    header {
         /* padding: 30px; */
         margin: 30px;
     }

@@ -1,0 +1,33 @@
+.seacrh_donors_wrapper{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 10px;
+    height: 120px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.seacrh_donors_wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.seacrh_donors_wrapper input {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    /* font-weight: 600; */
+}
+
+.seacrh_donors_wrapper span.num {
+
+}

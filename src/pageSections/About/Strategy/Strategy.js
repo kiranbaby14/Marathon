@@ -8,9 +8,8 @@ const Strategy = () => {
             <img src={image3} className="about_strategy_img" alt='strategy_img' />
             <div className='about_overlay'></div>
             <div className='text about_strategy_content'>
-                <h2>Strategy </h2>
-                <p>A 1000 mile ultra marathon with sports oldest rivalry at its core
-                    University Ultra Run UK pits Oxford and Cambrdige against one another, with a new challenger joining the party…St Andrews!!
+                <h3>Strategy </h3>
+                <p>Racing in mixed ability pairs allows for strategy, intrigue, jeopardy, and the race staying competitive right to the end. As long as the miles are shared evenly, the teams can create and change strategy throughout the race. Injuries will become a hot topic – how teams react strategically to them, and the ticking clock for rehabilitation as soon as a runner is in recovery mode: Will they be ready to race again in two day’s time? Will they manage to complete their allotted miles?
                 </p>
             </div>
 

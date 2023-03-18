@@ -28,7 +28,7 @@ const Teams = () => {
 
                 <SwiperSlide className='swiper_slide'><Team teamName="St Andrews" /></SwiperSlide>
                 <SwiperSlide className='swiper_slide'><Team teamName="Cambridge" /></SwiperSlide>
-                <SwiperSlide className='swiper_slide'><Team teamName="Oxbridge" /></SwiperSlide>
+                <SwiperSlide className='swiper_slide'><Team teamName="Oxford" /></SwiperSlide>
 
             </Swiper>
         </section>

@@ -1,33 +1,31 @@
-.seacrh_donors_wrapper{
+.search_donors_wrapper{
     position: absolute;
     z-index: 2;
     top: 100px;
     left: 10px;
-    height: 120px;
-    width: 150px;
+    height: 200px;
+    width: 270px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
 }
 
-.seacrh_donors_wrapper span {
+/* #search_donor_number{
+    -moz-appearance: textfield;
     width: 100%;
     text-align: center;
     font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.seacrh_donors_wrapper input {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    /* font-weight: 600; */
-}
-
-.seacrh_donors_wrapper span.num {
-
-}
+    border: none;
+    background-color: #ffffff;
+    color: #202030;
+} */
+/* 
+#search_donor_number::-webkit-outer-spin-button,
+#search_donor_number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+} */

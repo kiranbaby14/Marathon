@@ -1,5 +1,5 @@
-import React from 'react';
-import { MapContainer, Marker, Pane, Polyline, Popup, TileLayer } from 'react-leaflet';
+import React, { useEffect, useRef, useState } from 'react';
+import { MapContainer, Marker, Pane, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import mapIcon from "../../../assets/mapIcon.png"
 import { divIcon, Icon, point } from 'leaflet';
@@ -9,31 +9,43 @@ import "leaflet-defaulticon-compatibility";
 import "./Map.css";
 import DonorMapJSON from "../../../json/DonorMap.json";
 
+
 const Map = () => {
   const markers = DonorMapJSON;
-  const polyLineDataFromJSON = [];
+  const polyLineCoordsFromJSON = [];
 
   DonorMapJSON.map(data => {
-    polyLineDataFromJSON.push(data.coordinates)
+    polyLineCoordsFromJSON.push(data.coordinates)
   })
 
-  const customIcon = new Icon({
-    iconUrl: mapIcon,
-    iconSize: [30, 40]
-  })
+  const [centerCoords, setcenterCoords] = useState(polyLineCoordsFromJSON[100]);
 
-  const createCustomClusterIcon = (cluster) => {
-    return new divIcon({
-      html: `<div class="cluster-icon">${cluster.getChildCount()}</div>`,
-      className: "custom_marker_cluster",
-      iconSize: point(33, 33, true)
-    })
-  }
+  // useEffect(() => {
+  //   const seacrh_val = document.querySelector("#search_donor_number");
+  //   const seacrh_btn = document.querySelector("#search_donor_btn");
+  //   seacrh_btn.addEventListener("click", () => {
+  //     setcenterCoords(polyLineCoordsFromJSON[seacrh_val.value]);
+  //     console.log(DonorMapJSON[seacrh_val.value].popup);
+  //   })
+  // }, [])
+
+
+  // const customIcon = new Icon({
+  //   iconUrl: mapIcon,
+  //   iconSize: [30, 40]
+  // })
+
+  // const createCustomClusterIcon = (cluster) => {
+  //   return new divIcon({
+  //     html: `<div class="cluster-icon">${cluster.getChildCount()}</div>`,
+  //     className: "custom_marker_cluster",
+  //     iconSize: point(33, 33, true)
+  //   })
+  // }
 
   return (
     <>
-      
-      <MapContainer center={[50.066085, -5.715014]} zoom={6} minZoom={7} className="donate_page_map_container">
+      <MapContainer center={polyLineCoordsFromJSON[834]} zoom={5} minZoom={4} className="donate_page_map_container">
 
         <TileLayer
           // attribution='https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -45,10 +57,12 @@ const Map = () => {
         >
           {markers.map((marker) => (
             <Marker position={marker.coordinates} >
+            
               <Popup>{marker.popUp}</Popup>
             </Marker>
           ))}
-          <Polyline positions={polyLineDataFromJSON} />
+
+          <Polyline positions={polyLineCoordsFromJSON} />
         </MarkerClusterGroup>
       </MapContainer>
     </>

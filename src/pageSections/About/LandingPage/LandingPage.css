@@ -37,4 +37,16 @@
     .about_landing_page {
         justify-content: center;
     }
+
+    .about_override_p_tag {
+        width: 400px;
+    }
 }
+
+@media (max-width: 414px) {
+    .about_override_p_tag {
+        width: 310px;
+    }
+}
+
+

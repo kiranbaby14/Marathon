@@ -10,12 +10,14 @@ const LandingPage = () => {
             </video>
             <div className="home_video_overlay"></div>
             <div className="text">
-                <h2>University Ultra Run </h2>
-                <h3>Oxford vs Cambridge vs St Andrews</h3>
-                <p>A 1000 mile ultra marathon with sports oldest rivalry at its core
-                    University Ultra Run UK pits Oxford and Cambrdige against one another, with a new challenger joining the party…St Andrews!!
+                <h2>University Ultra Run 2023</h2>
+                <p>A 1050 mile ultra marathon with sport's oldest rivalry at its core.
                 </p>
-                <a href="#">Become a Patron</a>
+
+                <p>
+                University Ultra Run pits Britain’s oldest institutions: Oxford, Cambridge and St Andrews, against one another in the most extreme running race in British history.
+                </p>
+                <a href="/donate">Become a Patron</a>
             </div>
             {/* <ul className="social">
                     <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>

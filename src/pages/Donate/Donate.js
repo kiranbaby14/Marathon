@@ -1,35 +1,30 @@
 import { useLoadScript } from '@react-google-maps/api';
 import React from 'react';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
+import FAQ from '../../pageSections/Donate/FAQ/FAQ';
+import Info from '../../pageSections/Donate/Info/Info';
 import Map from '../../pageSections/Donate/Map/Map';
+import ScrollDownButton from '../../pageSections/Donate/ScrollDownButton/ScrollDownButton';
 import SearchDonors from '../../pageSections/Donate/SearchDonors/SearchDonors';
-import Tracker from '../Tracker/Tracker';
 import "./Donate.css";
 
 const Donate = () => {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_DONATE_PAGE_GOOGLE_MAPS_API_KEY,
-    libraries: [],
-  });
-
-  if (!isLoaded) {
-    return <div>Loading...</div>
-  } else {
-    return (
-      <>
-        <Header />
-        <Navbar />
-        <div className='donate'>
-          <SearchDonors />
-          <Map />
-          {/* // <Tracker /> */}
-        </div>
-
-      </>
-    )
-  }
-
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <div className='donate'>
+        <ScrollDownButton />
+        <SearchDonors />
+        <Map />
+      </div>
+      <Info />
+      <FAQ />
+      <Footer />
+    </>
+  )
 }
 
 export default Donate

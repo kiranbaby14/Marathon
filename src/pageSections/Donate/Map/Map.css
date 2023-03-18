@@ -1,6 +1,6 @@
 .donate_page_map_container {
     /* height: 100vh; */
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 

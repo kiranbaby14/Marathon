@@ -1,33 +1,41 @@
-import React, { useEffect } from 'react';
+import { Button, TextField } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import DonorJsonData from "../../../json/DonorMap.json";
 import "./SearchDonors.css";
 
 const SearchDonors = () => {
+
+    const valueRef = useRef('') 
+    const [donarName, setDonorName] = useState("");
     useEffect(() => {
-        const minus = document.querySelector(".minus");
-        const number = document.querySelector(".number");
-        const plus = document.querySelector(".plus");
-
-        let increment = 1;
-
-        plus.addEventListener("click", () => {
-            increment++;
-            number.value = increment;
-        })
-
-        minus.addEventListener("click", () => {
-            if (increment > 0) {
-                increment--;
-                number.value = increment;
+        const seacrh_val = document.querySelector("#search_donor_number");
+        const seacrh_btn = document.querySelector("#search_donor_btn");
+        seacrh_btn.addEventListener("click", () => {
+            if(DonorJsonData[valueRef.current.value].popup) {
+                setDonorName(DonorJsonData[valueRef.current.value].popup)
+            } else {
+                setDonorName("No Donor")
             }
         })
-    }, [])
+      }, [])
+
+
 
     return (
-        <div className='seacrh_donors_wrapper'>
-            <span className='minus'>-</span>
-            {/* <span className='number'>0000</span> */}
-            <input className='number' placeholder='0' />
-            <span className='plus'>+</span>
+        <div className='search_donors_wrapper'>
+            <h3>Find who owns the mile</h3>
+            <TextField type="number"
+                inputProps={{ min: 0, max: 1045 }}
+                style={{width: '150px'}}
+                id="search_donor_number outlined-basic" 
+                label="mile number" 
+                variant="outlined"
+                inputRef={valueRef} />
+            <Button 
+            id="search_donor_btn"
+            variant="outlined"
+            style={{width: '75px', height: '30px'}}>Search</Button>
+            <p>{donarName}</p>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import LandingPage from "../../pageSections/Home/LandingPage/LandingPage";
 import "./Home.css";
-import Partners from '../../pageSections/Home/Partners/Partners';
+import Partners from '../../components/Partners/Partners';
 import ScrollToTop from '../../jsScripts/ScrollToTop';
 
 const Home = () => {

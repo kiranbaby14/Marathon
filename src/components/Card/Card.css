@@ -33,12 +33,12 @@
 
 .card_h1{
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
 }
 
 .card_p{
-    font-size: 20px;
+    font-size: 13px;
     margin: 20px;
     visibility: hidden;
     opacity: 0;
@@ -49,7 +49,7 @@
 }
 
 .card:hover .constestant_intro{
-    height: 50%;
+    height: 100%;
 }
 
 .card:hover .card_p{
@@ -61,28 +61,36 @@
     transform: scale(1.02);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 412px) {
     .card {
         width: 100%;
         height: 200px;
         /* margin: 5px; */
     }
+}
 
+@media (max-width: 991px) {
+
+    .card {
+        width: 250px;
+        height: 250px;
+        /* margin: 5px; */
+    }
     .constestant_intro{
         height: 20%;
     }
 
     .card:hover .constestant_intro{
-        height: 70%;
+        height: 100%;
     }
 
     .card_h1{
-        font-size: 20px;
+        font-size: 15px;
         margin: 4px;
     }
 
     .card_p{
-        font-size: 14px;
+        font-size: 8px;
         margin: 4px;
     }
 }

@@ -1,8 +1,8 @@
-import { useLoadScript } from '@react-google-maps/api';
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Navbar from '../../components/Navbar/Navbar';
+import Partners from '../../components/Partners/Partners';
 import FAQ from '../../pageSections/Donate/FAQ/FAQ';
 import Info from '../../pageSections/Donate/Info/Info';
 import Map from '../../pageSections/Donate/Map/Map';
@@ -22,6 +22,7 @@ const Donate = () => {
       </div>
       <Info />
       <FAQ />
+      <Partners/>
       <Footer />
     </>
   )

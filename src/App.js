@@ -31,7 +31,6 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/tracker" element={<Tracker />} />
         </Routes>
-
       </BrowserRouter>
     </ThemeContext.Provider>
   );

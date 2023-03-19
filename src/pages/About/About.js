@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../../components/Footer/Footer';
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
+import Partners from '../../components/Partners/Partners';
 import Contestants from "../../pageSections/About/Contestants/Contestants"
 import GamePlan from '../../pageSections/About/GamePlan/GamePlan';
 import LandingPage from '../../pageSections/About/LandingPage/LandingPage';
@@ -17,6 +18,7 @@ const About = () => {
       <GamePlan />
       <Strategy />
       <Contestants />
+      <Partners/>
       <Footer />
     </>
   );

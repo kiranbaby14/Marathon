@@ -8,7 +8,6 @@ const ScrollDownButton = () => {
         const arrowBtn = document.getElementById("donate-arrow-btn");
 
         arrowBtn.addEventListener("click", ()=>{
-            console.log("lop");
             window.scrollTo({
                 top: 150,
                 behavior: "smooth"

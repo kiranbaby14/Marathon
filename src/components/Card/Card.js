@@ -1,5 +1,4 @@
 import "./Card.css";
-import zoro from "../../assets/zoro.jpg";
 
 const Card = ({imgSrc, name, description}) => {
     return <>

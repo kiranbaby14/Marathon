@@ -14,18 +14,3 @@
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
 }
 
-/* #search_donor_number{
-    -moz-appearance: textfield;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    border: none;
-    background-color: #ffffff;
-    color: #202030;
-} */
-/* 
-#search_donor_number::-webkit-outer-spin-button,
-#search_donor_number::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-} */

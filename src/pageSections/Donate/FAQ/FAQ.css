@@ -1,7 +1,7 @@
 .FAQ {
     min-height: 70vh;
     width: 100%;
-    padding: 100px 50px 50px 100px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -51,11 +51,21 @@
     /* background-color: yellow; */
 }
 
+#line-break-1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+#line-break-2::before{
+    content: "\a";
+    white-space: pre;
+}
+
 
 @media (max-width: 767px) {
-    .FAQ {
-        padding-top: 100px;
-    }
+    /* .FAQ {
+        padding: 100px;
+    } */
 
     .question h3 {
         font-size: 1rem;

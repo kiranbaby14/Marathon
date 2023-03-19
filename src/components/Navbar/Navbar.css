@@ -31,7 +31,9 @@
 .nav ul li a {
     text-decoration: none;
     font-size: 24px;
-    color: #fff;
+    background: radial-gradient(346px at 6.3% 95%, rgb(87, 213, 255) 0%, rgb(146, 109, 255) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav ul li a:hover {

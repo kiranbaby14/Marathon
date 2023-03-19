@@ -1,3 +1,18 @@
 .tracker_map_container{
     height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker_text{
+    color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 419px) {
+    .tracker_text{
+        font-size: 2rem !important;
+    }
+
 }

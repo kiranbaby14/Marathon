@@ -11,10 +11,6 @@ const Header = () => {
 
         header.classList.toggle("sticky", window.scrollY > 0)
         toggleClose.classList.toggle("sticky", window.scrollY > 0);
-
-        // if( window.scrollY && active=="active") {
-        //     toggle();
-        // }
     })
     
     return (

@@ -71,7 +71,7 @@ const Teams = () => {
     ]
     return (
         <section id="contestants">
-            <h3 id='contestants_heading'>Contestants</h3>
+            <h3 id='contestants_heading'>Contestants & Coaches</h3>
             <h1 ></h1>
             <Swiper className='swiper_container'
                 // install Swiper modules

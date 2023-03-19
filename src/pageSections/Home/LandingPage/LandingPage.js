@@ -1,6 +1,7 @@
 import React from 'react';
 import "./LandingPage.css";
 import video from "../../../assets/running.mp4";
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     return (
@@ -17,7 +18,7 @@ const LandingPage = () => {
                 <p>
                 University Ultra Run pits Britain’s oldest institutions: Oxford, Cambridge and St Andrews, against one another in the most extreme running race in British history.
                 </p>
-                <a href="/donate">Become a Patron</a>
+                <Link to="/donate">Become a Patron</Link>
             </div>
             {/* <ul className="social">
                     <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt='facebook' /></a></li>

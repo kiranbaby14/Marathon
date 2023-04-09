@@ -17,8 +17,9 @@ header {
 header.sticky {
     /* padding: 5px 100px; */
     margin: 5px 100px;
-    background: transparent;
-    backdrop-filter: blur(20px);
+    background-color: rgb(27, 26, 26, 0.5);
+    /* background: transparent; */
+    /* backdrop-filter: blur(20px); */
     box-shadow: 0 0 30PX rgba(0, 0, 0, 0.5);
 }
 

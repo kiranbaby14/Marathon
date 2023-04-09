@@ -41,7 +41,7 @@
 }
 
 .toggle-close {
-    position: fixed;
+    position: absolute;
     width: 60px;
     height: 60px;
     background: url(https://i.ibb.co/rt3HybH/close.png);

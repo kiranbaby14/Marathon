@@ -83,7 +83,7 @@ html {
     letter-spacing: 6px;
 }
 
-.position_absolute_right{
+/* .position_absolute_right{
     position: absolute;
     right: 0;
 }
@@ -91,7 +91,7 @@ html {
 .position_absolute_left{
     position: absolute;
     left: 0;
-}
+} */
 
 @media (max-width: 991px) {
 

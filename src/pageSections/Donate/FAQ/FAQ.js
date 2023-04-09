@@ -24,7 +24,7 @@ const FAQ = () => {
 
                     <h3>What is our 1050 mile Patron fundraiser?</h3>
 
-                    <svg width={15} height={10} viewBox="0 0  42 25">
+                    <svg width={15} height={10} viewBox="0 0  42 25" className='FAQ_svg'>
                         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
                     </svg>
                 </div>
@@ -42,7 +42,7 @@ const FAQ = () => {
 
                     <h3>How will your generous contribution be used?</h3>
 
-                    <svg width={15} height={10} viewBox="0 0  42 25">
+                    <svg width={15} height={10} viewBox="0 0  42 25"  className='FAQ_svg'>
                         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
                     </svg>
                 </div>
@@ -58,7 +58,7 @@ const FAQ = () => {
             <div className='FAQ_container'>
                 <div className='question'>
                     <h3>How can I become a patron? </h3>
-                    <svg width={15} height={10} viewBox="0 0  42 25">
+                    <svg width={15} height={10} viewBox="0 0  42 25"  className='FAQ_svg'>
                         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
                     </svg>
                 </div>

@@ -34,10 +34,10 @@
 }
 
 .answer{
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     color: white;
-    transition: height 1.3s ease;
+    transition: max-height 1.3s ease;
 }
 
 .answer p {
@@ -47,8 +47,29 @@
 }
 
 .FAQ_container.active .answer {
-    height: max-content;
-    /* background-color: yellow; */
+    max-height: 120px;
+    animation: FAQ_fade 1s ease-in-out;
+}
+
+.FAQ_container.active  .FAQ_svg {
+    transform: rotate(180deg);
+   
+}
+
+.FAQ_svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes FAQ_fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 #line-break-1::after{

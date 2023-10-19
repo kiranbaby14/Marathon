@@ -1,9 +1,9 @@
 import React from 'react'
-import { partner1, partner2, partner3, partner4 } from '../../StaticFilePath';
+import { partner1, partner3} from '../../StaticFilePath';
 import "./Partners.css";
 
 const Partners = () => {
-    const partners = [partner1, partner2, partner3, partner4];
+    const partners = [partner1, partner3];
 
     return (
         <section className='partners'>

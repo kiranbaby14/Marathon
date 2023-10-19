@@ -72,8 +72,8 @@ const Teams = () => {
     return (
         <section id="contestants">
             <h3 id='contestants_heading'>Contestants</h3>
-            <h1 ></h1>
-            <Swiper className='swiper_container'
+            <h1>To be confirmed</h1>
+            {/* <Swiper className='swiper_container'
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 slidesPerView={1}
@@ -85,7 +85,7 @@ const Teams = () => {
                     <SwiperSlide className='swiper_slide'><Team  teamInfo={info} key={key}/></SwiperSlide>
                 ))}
             
-            </Swiper>
+            </Swiper> */}
         </section>
     )
 }

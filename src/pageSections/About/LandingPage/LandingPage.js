@@ -10,7 +10,7 @@ const LandingPage = () => {
                 <div className="about_overlay"></div>
                 <div className='text'>
                     <h3 id=''>About </h3>
-                    <p className='about_override_p_tag'>An elite team of experienced runners from Oxford, Cambridge and St Andrews plan to take part in an epic Ultra Race across the UK from Land’s End to John O’Groats with a target date of July 19th 2023.
+                    <p className='about_override_p_tag'>An elite team of experienced runners from Oxford, Cambridge and St Andrews plan to take part in an epic Ultra Race across the UK from Land’s End to John O’Groats.
                     </p>
                 </div>
             </div>

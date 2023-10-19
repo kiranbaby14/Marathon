@@ -11,7 +11,7 @@ const LandingPage = () => {
             </video>
             <div className="home_video_overlay"></div>
             <div className="text">
-                <h2>University Ultra Run 2023</h2>
+                <h2>University Ultra Run</h2>
                 <p>A 1050 mile ultra marathon with sport's oldest rivalry at its core.
                 </p>
 
